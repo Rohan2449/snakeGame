@@ -154,7 +154,6 @@ public class SoundDriverHo {
     }
 
     public void setVolumeAll(float f) {
-        // TODO Auto-generated method stub
         for(int i = 0; i < this.clips.length; i++) {
             this.setVolume(i, f);
         }

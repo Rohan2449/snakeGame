@@ -4,11 +4,20 @@ import utilities.GDV5;
 
 import java.awt.*;
 
+
+
 public class Interface {
     private static final Font fgtSS = new Font("Founders Grotesk Text", Font.BOLD, 10);
     private static final Font fgtS =new Font("Founders Grotesk Text",Font.BOLD, 25);
 
-    private static final Font fgt =new Font("Founders Grotesk Text",Font.BOLD, 40);
+    private static final Font fgt = new Font("Founders Grotesk Text", Font.BOLD, 40);
+    
+    
+    private int gameMode = 0; /*
+                                Game Mode 0 - Each some number of apples in a period of time
+                                Game Mode 1 - Try to obtain a high scrore, infinite time
+                                Game Mode 2 - 
+                              */
 
     public static void drawCenteredString(String str, int desiredX,int desiredY, Graphics2D win){
 
@@ -31,7 +40,7 @@ public class Interface {
     }
 
 
-    public void drawScoreBoard(Graphics2D pb){
+    public void drawScoreBoardModeOne(Graphics2D pb){
         pb.setFont(fgtS);
         pb.setColor(Color.white);
         drawCenteredString("Lives: "+ SnakeRunner.getS1().getLives(), GDV5.getMaxWindowX() -120, 40, pb);

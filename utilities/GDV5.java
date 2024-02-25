@@ -137,7 +137,6 @@ public abstract class GDV5 extends Canvas implements Runnable, KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
 		KeysPressed[e.getKeyCode()] = true;
 
 	}

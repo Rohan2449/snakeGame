@@ -20,7 +20,7 @@ public class SnakeRunner extends GDV5{
     //     0- main menu,  1- game, 2- win, 3-loss
     private static int gameStatus =0;
 
-    private static Rectangle staminaBar = new Rectangle(634, 80, s1.getStamina() * 5/8, 20);
+    private static Rectangle staminaBar = new Rectangle(1000, 80, s1.getStamina() * 5/8, 20);
 
     public SnakeRunner(){
         Board.createBoard();
@@ -85,7 +85,7 @@ public class SnakeRunner extends GDV5{
 
             s1.drawSnake(win);
 
-            inx.drawScoreBoard(win);
+            inx.drawScoreBoardModeOne(win);
             win.setColor(Color.green);
             win.fill(staminaBar);
         }
